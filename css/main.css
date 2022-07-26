@@ -513,6 +513,12 @@ img {
     align-items: center;
     text-align: center;
   }
+  .hero__left {
+    width: 100%;
+  }
+  .hero__right {
+    width: 100%;
+  }
   .hero__title {
     margin: 0 0 24px 0;
     font-size: 64px;
@@ -523,6 +529,12 @@ img {
   }
 }
 @media screen and (max-width: 610px) {
+  .hero__left {
+    width: 100%;
+  }
+  .hero__right {
+    width: 100%;
+  }
   .hero__title {
     margin-bottom: 18px;
     font-size: 40px;
