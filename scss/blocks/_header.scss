@@ -58,10 +58,12 @@
     line-height: 28px;
     color: #FFFFFF;
 }
-.hamburger__menu--link{
+
+.hamburger__menu--link {
     text-decoration: none;
     display: none;
 }
+
 // .hamburger__icon{
 //     display: none;
 // }
@@ -72,20 +74,24 @@
     }
 
 }
+
 @media screen and (max-width:610px) {
-    .container{
+    .container {
         padding: 0 24px;
     }
-    .header__list{
+    .header__list {
         display: none;
     }
-    .sign__link{
+
+    .sign__link {
         display: none;
     }
-.site-header{
-    padding: 48px 0 80px 0;
-}
-    .hamburger__menu--link{
+
+    .site-header {
+        padding: 48px 0 80px 0;
+    }
+
+    .hamburger__menu--link {
         display: block;
     }
 }
