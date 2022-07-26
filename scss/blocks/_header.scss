@@ -57,6 +57,19 @@
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.sign__link:hover {
+    background-color: #fff;
+    color: #012F34;
+    border: 2px solid #012F34;
+}
+.sign__link:active {
+    background-color:  #012F34;
+    color: #fff;
+    border: 2px solid #012F34;
+    opacity: 0.25;
 }
 
 .hamburger__menu--link {
@@ -79,6 +92,7 @@
     .container {
         padding: 0 24px;
     }
+
     .header__list {
         display: none;
     }

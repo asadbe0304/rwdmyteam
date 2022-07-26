@@ -409,6 +409,20 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.sign__link:hover {
+  background-color: #fff;
+  color: #012F34;
+  border: 2px solid #012F34;
+}
+
+.sign__link:active {
+  background-color: #012F34;
+  color: #fff;
+  border: 2px solid #012F34;
+  opacity: 0.25;
 }
 
 .hamburger__menu--link {
@@ -868,6 +882,7 @@ img {
   color: #012F34;
   box-sizing: border-box;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .ready__link:hover {
@@ -878,6 +893,7 @@ img {
 .ready__link:active {
   background: #012F34;
   color: #fff;
+  border: 2px solid #012F34;
 }
 
 @media screen and (max-width: 910px) {
