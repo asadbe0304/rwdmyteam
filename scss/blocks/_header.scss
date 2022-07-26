@@ -1,13 +1,12 @@
 .site-header {
     margin: 0;
-    padding: 0;
-    
+    padding: 73px 0px 130px;
 }
 
 .header-inner {
     margin: 0;
-    padding: 73px 0px 130px;
-    max-width: 1165px;
+    padding: 0;
+    max-width: 1150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,14 +65,14 @@
 // .hamburger__icon{
 //     display: none;
 // }
-@media screen and (max-width:690x) {
-    .header-inner {
+@media screen and (max-width:910px) {
+    .site-header {
         margin: 0;
         padding: 64px 0px 123px;
     }
 
 }
-@media screen and (max-width:630px) {
+@media screen and (max-width:610px) {
     .container{
         padding: 0 24px;
     }
@@ -83,11 +82,10 @@
     .sign__link{
         display: none;
     }
-.header-inner{
+.site-header{
     padding: 48px 0 80px 0;
 }
     .hamburger__menu--link{
         display: block;
     }
-
 }

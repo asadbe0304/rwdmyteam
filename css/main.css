@@ -3,19 +3,15 @@
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), url("../fonts/livvic-v13-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* livvic-700 - latin */
 @font-face {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), url("../fonts/livvic-v13-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -24,10 +20,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -62,12 +56,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -75,10 +66,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -95,13 +84,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -119,10 +105,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -172,14 +156,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -187,8 +167,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -197,8 +176,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -247,18 +225,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -281,10 +253,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -300,10 +270,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -318,10 +286,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -369,7 +335,7 @@ body {
 
 img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .visually-hidden {
@@ -386,18 +352,18 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1165px;
+  max-width: 1150px;
 }
 
 .site-header {
   margin: 0;
-  padding: 0;
+  padding: 73px 0px 130px;
 }
 
 .header-inner {
   margin: 0;
-  padding: 73px 0px 130px;
-  max-width: 1165px;
+  padding: 0;
+  max-width: 1150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -428,7 +394,7 @@ img {
   text-decoration: none;
 }
 
-.header__item+.header__item {
+.header__item + .header__item {
   margin-left: 40px;
 }
 
@@ -455,35 +421,29 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 690x) {
-  .header-inner {
+@media screen and (max-width: 910px) {
+  .site-header {
     margin: 0;
     padding: 64px 0px 123px;
   }
 }
-
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 610px) {
   .container {
     padding: 0 24px;
   }
-
   .header__list {
     display: none;
   }
-
   .sign__link {
     display: none;
   }
-
-  .header-inner {
+  .site-header {
     padding: 48px 0 80px 0;
   }
-
   .hamburger__menu--link {
     display: block;
   }
 }
-
 .site__hero {
   margin: 0;
   padding: 0;
@@ -492,7 +452,7 @@ img {
 .hero__section {
   margin: 0;
   padding: 0;
-  max-width: 1165px;
+  max-width: 1150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -518,7 +478,7 @@ img {
 }
 
 .hero__right {
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
   width: 445px;
 }
@@ -541,32 +501,37 @@ img {
   background-color: #79C8C7;
 }
 
-@media screen and (max-width: 1050px) {
-  .hero__section {
-
-    flex-direction: column;
+@media screen and (max-width: 987px) {
+  .hero__right {
     align-items: center;
   }
-
-  .hero__left {
+}
+@media only screen and (max-width: 910px) {
+  .hero__section {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-
   .hero__title {
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
     font-size: 64px;
     line-height: 56px;
   }
-  .line{
+  .line {
     display: none;
   }
-  .hero__right {
-    width: 457px;
+}
+@media screen and (max-width: 610px) {
+  .hero__title {
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 40px;
     text-align: center;
+  }
+  .hero__text {
     font-size: 15px;
     line-height: 28px;
+    text-align: center;
   }
-
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
