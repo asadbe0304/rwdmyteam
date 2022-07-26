@@ -32,7 +32,7 @@
 }
 
 .hero__right {
-    margin: 0 0 0 30px;
+    margin: 0 30px 0 30px;
     padding: 0;
     width: 445px;
 }
@@ -97,6 +97,10 @@
         font-size: 40px;
         line-height: 40px;
         text-align: center;
+    }
+    .hero__section{
+        width: 100%;
+        align-items: center;
     }
     .hero__text {
         font-size: 15px;
