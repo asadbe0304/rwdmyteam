@@ -1,6 +1,6 @@
 .site__hero {
     margin: 0;
-    padding: 0;
+    padding: 0 0 250px 0;
 }
 
 .hero__section {
@@ -62,6 +62,9 @@
 }
 
 @media only screen and (max-width:910px) {
+    .site__hero{
+        padding-bottom: 256px;
+    }
     .hero__section {
         margin: 0;
         flex-direction: column;
@@ -86,6 +89,9 @@
 }
 
 @media screen and (max-width:610px) {
+    .site__hero{
+        padding-bottom: 197px;
+    }
     .hero__left{
         width: 100%;
     }

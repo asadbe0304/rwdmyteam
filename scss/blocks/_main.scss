@@ -1,0 +1,165 @@
+.site-main {
+    margin: 0;
+    padding: 0;
+    background: #012F34;
+}
+
+.main__inner {
+    padding: 140px 0;
+}
+
+.main-line {
+    margin: 0;
+    width: 52px;
+    height: 4px;
+    display: block;
+    background: #F67E7E;
+}
+
+.main-content {
+    margin: 0;
+    padding: 54px 0 0 0;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main__left {
+    width: 445px;
+}
+
+.main__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.main__right {
+    margin: 0;
+    padding: 0;
+    width: 525px;
+}
+
+.main__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__card {
+    margin: 0 0 0 28px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main__item+.main__item {
+    padding-top: 32px;
+}
+
+.list__title {
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+
+.list__text {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:910px) {
+    .main__inner {
+        padding: 140px 0;
+    }
+
+    .container {
+        padding: 0 60px;
+    }
+
+    .main-content {
+        padding: 32px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main__left {
+        width: 100%;
+    }
+
+    .main__right {
+        width: 100%;
+    }
+
+    .list__title {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .list__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .main__title {
+        margin-bottom: 64px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .main__inner {
+        padding: 64px 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .main__left {
+        width: 100%;
+    }
+
+    .main__right {
+        width: 100%;
+    }
+.main__item{
+    flex-direction: column;
+    text-align: center;
+}
+.item__card{
+    flex-direction: column;
+}
+    .main__title {
+        margin-bottom: 56px;
+    }
+
+}
