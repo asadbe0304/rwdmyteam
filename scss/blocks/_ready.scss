@@ -1,9 +1,15 @@
 .site-ready {
     margin: 0;
-    padding: 76px 0;
+    padding: 0;
     background: #F67E7E;
 }
-
+.ready__img{
+    padding: 76px 0;
+    background-image: url(../../images/ready.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 60px;
+}
 .ready-section {
     margin: 0 auto;
     padding: 0;

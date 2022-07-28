@@ -1,8 +1,14 @@
 .site-article {
     margin: 0;
-    padding: 140px 0;
+    padding: 0;
 }
-
+.article__section{
+    margin: 0;
+    padding: 140px 0;
+    background-image: url(../../images/article1.svg), url(../../images/article2.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
 .article__content {
     margin: 0;
     padding: 0;

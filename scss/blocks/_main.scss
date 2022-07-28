@@ -1,7 +1,16 @@
 .site-main {
     margin: 0;
-    padding: 140px 0;
+    padding: 0;
     background: #012F34;
+}
+
+.main-section {
+    margin: 0;
+    padding: 140px 0;
+    background-image: url(../../images/section3.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 .main-line {
@@ -22,7 +31,7 @@
 }
 
 .main__left {
-    width: 445px;
+    width: 40%;
 }
 
 .main__title {
@@ -37,7 +46,7 @@
 .main__right {
     margin: 0;
     padding: 0;
-    width: 525px;
+    width: 50%;
 }
 
 .main__list {
@@ -89,8 +98,9 @@
 }
 
 @media only screen and (max-width:910px) {
-    .site-main {
+    .main-section {
         padding: 140px 0;
+        background-position: top right;
     }
 
     .container {
@@ -105,11 +115,11 @@
     }
 
     .main__left {
-        width: 100%;
+        width: 80%;
     }
 
     .main__right {
-        width: 100%;
+        width: 90%;
     }
 
     .item__card {
@@ -136,12 +146,13 @@
 }
 
 @media screen and (max-width:610px) {
-    .site-main {
+    .main-section {
         padding: 64px 0;
+        background-position: top right;
     }
 
     .main__left {
-        width: 100%;
+        width: 80%;
     }
 
     .item__card {
@@ -150,7 +161,7 @@
     }
 
     .main__right {
-        width: 100%;
+        width: 90%;
     }
 
     .main__item {

@@ -441,7 +441,31 @@ img {
     padding: 0 24px;
   }
   .header__list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #012F34;
+    opacity: 0.8;
+  }
+  .active {
+    display: flex;
+  }
+  .header__item {
+    padding: 20px 0;
+  }
+  .item__link:hover {
+    color: aqua;
+  }
+  .header__item + .header__item {
+    margin: 0;
+    padding: 20px 0;
   }
   .sign__link {
     display: none;
@@ -455,8 +479,17 @@ img {
 }
 .site-main {
   margin: 0;
-  padding: 140px 0;
+  padding: 0;
   background: #012F34;
+}
+
+.main-section {
+  margin: 0;
+  padding: 140px 0;
+  background-image: url(../../images/section3.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 .main-line {
@@ -477,7 +510,7 @@ img {
 }
 
 .main__left {
-  width: 445px;
+  width: 40%;
 }
 
 .main__title {
@@ -492,7 +525,7 @@ img {
 .main__right {
   margin: 0;
   padding: 0;
-  width: 525px;
+  width: 50%;
 }
 
 .main__list {
@@ -543,8 +576,9 @@ img {
 }
 
 @media only screen and (max-width: 910px) {
-  .site-main {
+  .main-section {
     padding: 140px 0;
+    background-position: top right;
   }
   .container {
     padding: 0 24px;
@@ -556,10 +590,10 @@ img {
     align-items: center;
   }
   .main__left {
-    width: 100%;
+    width: 80%;
   }
   .main__right {
-    width: 100%;
+    width: 90%;
   }
   .item__card {
     margin: 0;
@@ -581,18 +615,19 @@ img {
   }
 }
 @media screen and (max-width: 610px) {
-  .site-main {
+  .main-section {
     padding: 64px 0;
+    background-position: top right;
   }
   .main__left {
-    width: 100%;
+    width: 80%;
   }
   .item__card {
     margin: 0;
     padding: 0;
   }
   .main__right {
-    width: 100%;
+    width: 90%;
   }
   .main__item {
     flex-direction: column;
@@ -607,16 +642,29 @@ img {
 }
 .site__hero {
   margin: 0;
-  padding: 0 0 250px 0;
+  padding: 0 0 0px 0;
 }
 
 .hero__section {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0px 0;
+  background-image: url(../images/hero.svg);
+  background-repeat: no-repeat;
+  background-position-x: -105px;
+  background-position-y: top;
+}
+
+.hero {
+  margin: 0;
+  padding: 0 0 250px 0;
   max-width: 1150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  background-image: url(../../images/hero2.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 350px;
 }
 
 .hero__left {
@@ -641,7 +689,7 @@ img {
 .hero__right {
   margin: 0 30px 0 30px;
   padding: 0;
-  width: 445px;
+  width: 40%;
 }
 
 .hero__text {
@@ -666,22 +714,27 @@ img {
   .hero__right {
     align-items: center;
   }
+  .hero {
+    background-position-y: 450px;
+  }
 }
 @media only screen and (max-width: 910px) {
-  .site__hero {
-    padding-bottom: 256px;
-  }
   .hero__section {
+    background-image: none;
+  }
+  .hero {
     margin: 0;
+    background-position-y: 320px;
+    background-position-x: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .hero__left {
-    width: 100%;
+    width: 80%;
   }
   .hero__right {
-    width: 100%;
+    width: 80%;
   }
   .hero__title {
     margin: 0 0 24px 0;
@@ -693,14 +746,14 @@ img {
   }
 }
 @media screen and (max-width: 610px) {
-  .site__hero {
-    padding-bottom: 197px;
+  .hero__section {
+    background-image: none;
   }
   .hero__left {
-    width: 100%;
+    width: 80%;
   }
   .hero__right {
-    width: 100%;
+    width: 80%;
   }
   .hero__title {
     margin-bottom: 18px;
@@ -708,9 +761,12 @@ img {
     line-height: 40px;
     text-align: center;
   }
-  .hero__section {
+  .hero {
+    padding-bottom: 197px;
     width: 100%;
     align-items: center;
+    background-position-x: center;
+    background-position-y: 310px;
   }
   .hero__text {
     font-size: 15px;
@@ -720,7 +776,15 @@ img {
 }
 .site-article {
   margin: 0;
+  padding: 0;
+}
+
+.article__section {
+  margin: 0;
   padding: 140px 0;
+  background-image: url(../../images/article1.svg), url(../../images/article2.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 .article__content {
@@ -839,8 +903,16 @@ img {
 }
 .site-ready {
   margin: 0;
-  padding: 76px 0;
+  padding: 0;
   background: #F67E7E;
+}
+
+.ready__img {
+  padding: 76px 0;
+  background-image: url(../../images/ready.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 60px;
 }
 
 .ready-section {
