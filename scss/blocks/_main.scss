@@ -8,12 +8,18 @@
     position: relative;
     margin: 0;
     padding: 140px 0;
+}
+
+.main-section::after {
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    background-size: 100%;
     background-image: url(../../images/section3.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
 }
-
 
 .main-line {
     margin: 0;
@@ -113,11 +119,11 @@
         padding: 32px 0 0 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .main__left {
-        width: 80%;
+        width: 60%;
     }
 
     .main__right {
