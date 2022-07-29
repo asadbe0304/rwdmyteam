@@ -20,7 +20,7 @@
 }
 
 .article__content--top {
-    margin: 0 0 92px 0;
+    margin: 0 0 0px 0;
     padding: 0;
 }
 
@@ -49,10 +49,14 @@
 
 .article__item {
     margin: 0;
-    padding: 0;
+    padding: 92px 0 0px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../../images/quote.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 57px;
 }
 .article__item+.article__item{
     margin-left: 30px;
@@ -101,8 +105,8 @@
         align-items: center;
         width: 100%;
     }
-    .article__content--top{
-        margin-bottom: 84px;
+    .article__item{
+        padding-bottom: 84px;
     }
     .article__quote{
         margin-bottom: 16px;
