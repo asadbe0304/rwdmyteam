@@ -16,13 +16,14 @@
 .meet-section::before {
     position: absolute;
     content: " ";
-    top: 0;
-    left: -130px;
+        top: 0;
+        left: 0px;
     width: 200px;
     height: 200px;
     background-image: url(../../images/bout.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position-x: -110px;
 
 }
 

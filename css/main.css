@@ -484,6 +484,7 @@ img {
 }
 
 .main-section {
+  position: relative;
   margin: 0;
   padding: 140px 0;
   background-image: url(../../images/section3.svg);
@@ -651,8 +652,8 @@ img {
   padding: 0 0 0px 0;
   background-image: url(../images/hero.svg);
   background-repeat: no-repeat;
-  background-position-x: -105px;
-  background-position-y: top;
+  background-position-x: -100px;
+  background-position-y: 0px;
 }
 
 .about__section {
@@ -663,26 +664,26 @@ img {
 .about__section::after {
   position: absolute;
   content: " ";
-  z-index: -3;
   width: 200px;
   height: 200px;
   margin: auto 0;
-  top: 0;
-  right: 10px;
-  bottom: -114px;
+  right: 0;
+  bottom: 0;
   background-image: url(../images/abou.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position-x: 100px;
 }
 
 .hero {
+  position: relative;
   margin: 0;
   padding: 0 0 250px 0;
   max-width: 1150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-image: url(../../images/hero2.svg);
+  background-image: url(../images/hero2.svg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 350px;
@@ -1068,12 +1069,13 @@ img {
   position: absolute;
   content: " ";
   top: 0;
-  left: -130px;
+  left: 0px;
   width: 200px;
   height: 200px;
   background-image: url(../../images/bout.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position-x: -110px;
 }
 
 .meet__content {
@@ -1209,12 +1211,22 @@ img {
 }
 
 .client-section {
+  position: relative;
   margin: 0;
   padding: 140px 0 151px 0;
   background: #012F34;
-  background-image: url(../../images/cli.svg);
+}
+
+.client-section::before {
+  position: absolute;
+  content: " ";
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/clien.svg);
   background-repeat: no-repeat;
-  background-position: left right;
+  background-position-y: 0;
 }
 
 .client__content {
@@ -1253,6 +1265,9 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+  .client-section::before {
+    background-position-y: -100px;
   }
   .client__title {
     font-size: 32px;

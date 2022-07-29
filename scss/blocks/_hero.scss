@@ -9,8 +9,8 @@
     padding: 0 0 0px 0;
     background-image: url(../images/hero.svg);
     background-repeat: no-repeat;
-    background-position-x: -105px;
-    background-position-y: top;
+    background-position-x: -100px;
+    background-position-y: 0px;
 }
 
 .about__section {
@@ -21,26 +21,26 @@
 .about__section::after {
     position: absolute;
     content: " ";
-    z-index: -3;
     width: 200px;
     height: 200px;
     margin: auto 0;
-    top: 0;
-    right: 10px;
-    bottom: -114px;
+    right: 0;
+    bottom: 0;
     background-image: url(../images/abou.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position-x: 100px;
 }
 
 .hero {
+    position: relative;
     margin: 0;
     padding: 0 0 250px 0;
     max-width: 1150px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-image: url(../../images/hero2.svg);
+    background-image: url(../images/hero2.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 350px;

@@ -4,12 +4,21 @@
 }
 
 .client-section {
+    position: relative;
     margin: 0;
     padding: 140px 0 151px 0;
     background: #012F34;
-    background-image: url(../../images/cli.svg);
+}
+.client-section::before{
+    position: absolute;
+    content: " ";
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-image: url(../../images/clien.svg);
     background-repeat: no-repeat;
-    background-position: left right;
+    background-position-y: 0;
 }
 
 .client__content {
@@ -48,6 +57,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+    .client-section::before{
+        background-position-y: -100px;
     }
 
     .client__title {
